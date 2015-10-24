@@ -1,0 +1,65 @@
+var name = "Koly Sengupta";
+var formattedName = HTMLheaderName.replace("%data%",name);
+$("#header").prepend(formattedName);
+
+
+var bio = {
+	"name" : "Koly Sengupta",
+	"role" : "Front End Developer",
+	"contact" : {
+		"email":"koly.sg@gmail.com",
+		"phone":"9793087575",
+		"github":"https://github.com/kolysg",
+		"location" : "San Ramon, CA"
+14      },
+15      "skills" : ["Web Design", "Graphic Design","Architectural Design","Data Analysis","Basic Programming"],
+16      "welcomeMessage" : "Thanks fvisiting my site",
+17      "myPic":"C:\Users\Koly\OneDrive\Pictures\Koly.jpg"
+18  };
+19  
+20  var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+21  $("#main").append(formattedSkills);
+22  
+23  var work = {
+24      "position" : "Design Associate",
+25      "employer" : "EnCodePlus LLC",
+26      "years" : "1 year",
+27      "place" : "SugarLand, TX"
+28  };
+29  
+30  var education = {
+31      "schools" : [
+32          {
+33              "name" : "Texas A&M University",
+34              "city" : "College Station, TX, US",
+35              "degree":"Masters",
+36              "major" : ["Urban & Regional Planning"],
+37              "dates" : "2011-2013"
+38          },
+39      
+40          {
+41              "name" : "Bangladesh University of Engineering and Technology",
+42              "city" : "Dhaka, Bangladesh",
+43              "degree":"Bachelor's",
+44              "major" : ["Architecure"],
+45              "dates" : "2001-2008"
+46          }
+47      ],
+48  
+49      "onlineCourses" : [
+50          {
+51              "title" : "Introduction to programming in Python (Part 1)",
+52              "school" : "Coursera - Rice University",
+53              "dates" : "2014",
+54              "url" : "https://www.coursera.org/course/interactivepython1" 
+55          },
+56  
+57          {
+58              "title" : "Front End Development Nanodegree",
+59              "school" : "Udacity",
+60              "dates" : "2015",
+61              "url" : "https://www.udacity.com"
+62          }
+63              
+64      ]
+65  };
