@@ -3,7 +3,7 @@
 //bio
 var bio = {
 	"name": "Koly Sengupta",
-	"role": "Front End Developer",
+	"role": "Front End Developer/Designer",
 	"contacts": {
 		"email": "koly.sg@gmail.com",
 		"phone": "979----7575",
@@ -43,10 +43,10 @@ bio.display = function(){
 	$("#topContacts").append(formattedLocation);
 
 	var formattedPic = HTMLbioPic.replace("%data%", bio.pic);
-	$("#topContacts").append(formattedPic);
+	$("#header").append(formattedPic);
 
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
-	$("#topContacts").append(formattedWelcomeMsg);
+	$("#header").append(formattedWelcomeMsg);
 
 //var formattedPic = HTMLbioPic.replace("%data%", bio.pic);
 //$("#topContacts").append(formattedPic);
@@ -246,10 +246,7 @@ projects.display = function(){
 }
 projects.display();
 
-
 //Loc
-
-
 
 //Locationizer
 function locationizer(work){
