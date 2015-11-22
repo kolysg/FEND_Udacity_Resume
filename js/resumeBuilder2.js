@@ -12,7 +12,7 @@ var bio = {
 		"location": "East Bay, California"
 
 	},
-	"pic": "images/Me.png",
+	"pic": "images/koly.jpg",
 	//"pic": "https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11390120_10207208987806072_75049282207992131_n.jpg?oh=d2f2e7b4e70a341e6a14c3cad9943ab0&oe=568D812F",
 	"welcomeMessage": "Thanks for visitng my page. If you like my work and think I can be a good fit, please contact me in the address provided.",
 	//"skills": ["Inquisitive", "Persistent", "Agile", "Pixel-perfectionist"]
@@ -211,7 +211,7 @@ var projects = {
 		"description" : "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework.The page is fully responsive and works on mobile, tablet, and desktop browsers.",
 		"images" : ["images/Capture_portfolio.jpg"],
 		"alt": "image of portfolio",
-		"github link": "https://github.com/kolysg/FEND_Udacity/tree/master/Portfolio"
+		"URL": "https://github.com/kolysg/FEND_Udacity/tree/master/Portfolio"
 		
 	},
 
@@ -221,7 +221,7 @@ var projects = {
 		"description" :"Developed this personal resume page using Javascript and Jquery.",
 		"images" : [""],
 		"alt": "image of resume",
-		"github link":"https://github.com/kolysg/FEND_Udacity/tree/master/Online%20Resume"
+		"URL":"https://github.com/kolysg/FEND_Udacity/tree/master/Online%20Resume"
 	},*/
 
 	{
@@ -230,7 +230,7 @@ var projects = {
 		"description" :"Developed a Pong game using key events in Python.",
 		"images" : ["images/Pong_game.png"],
 		"alt": "image of Pong Game",
-		"project link":"http://www.codeskulptor.org/#user40_6Q0bID6XeV_0.py"
+		"URL":"http://www.codeskulptor.org/#user40_6Q0bID6XeV_0.py"
 	},
 
 	{
@@ -239,7 +239,7 @@ var projects = {
 		"description" :"Developed a Stop Watch exploring different event handlers in Python.",
 		"images" : ["images/Stop_watch.png"],
 		"alt": "image of Stop Watch",
-		"project link":"https://github.com/kolysg/Python/blob/master/Stopwatch.py"
+		"URL":"https://github.com/kolysg/Python/blob/master/Stopwatch.py"
 	}
 
 	]

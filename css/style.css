@@ -8,9 +8,31 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.project-entry {
+  padding-left: 5%;
+  padding-right: 0%;
+  display: block;
+  float: left;
+  width: 25%;
+  height:auto;
+  position: relative;
+}
+
+#proj-descrip{
+  width: 100%;
+  height: 120px;
+  display: block;
+  margin-top: 10px;
+}
+
+#onlineclassURL{
+  font-style: italic;
+  color: #999999;
 }
 
 h1 {
@@ -92,6 +114,12 @@ a {
   display: block;
 }
 
+#skills {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
 .orange {
   background-color: #F5AE23;
 }
@@ -127,7 +155,9 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .center-content {
@@ -144,7 +174,7 @@ ul {
 .biopic {
   padding-top: 0px;
   padding-right: 10px;
-  width: 200px;
+  width: auto;
   vertical-align: text-top;
   float: left;
 }
@@ -154,7 +184,18 @@ img {
   padding: 0px;
   width: 200px;
   height: 230px;
+
 }
+
+#circle { 
+  width: 150px; 
+  height: 150px; 
+  background: blue; 
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border-radius: 50%; 
+}
+
 
 /* Bar chart stuff */
 .chart div {
@@ -180,11 +221,41 @@ span {
   #letsConnect {
     margin-top: 5%;
   }
+  .project-entry{
+    display: block;
+    float: left;
+    width:100%;
+    height: auto;
+    padding-bottom: 1%;
+  }
+  #proj-descrip{
+    width:auto;
+    height:auto;
+    margin-bottom: 10px;
+  }
+  #circle{
+    display:50%;
+  }
 }
 
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
+  }
+  .project-entry{
+    display: block;
+    float: left;
+    width:100%;
+    height:auto;
+    padding-bottom: 1%;
+  }
+  #proj-descrip{
+    width:100%;
+    height:auto;
+    margin-bottom: 10px;
+  }
+  #circle{
+    display:none;
   }
 }
 
@@ -197,6 +268,21 @@ span {
   }
   .welcome-message {
     display: none;
+  }
+  .project-entry{
+    display: block;
+    float: left;
+    width:100%;
+    height:auto;
+    padding-bottom: 1%;
+  }
+  #proj-descrip{
+    width:100%;
+    height:auto;
+    margin-bottom: 10px;
+  }
+  #circle{
+    display:none;
   }
 }
 
@@ -213,11 +299,44 @@ span {
   padding-bottom: 5%;
 }
 
+@media only screen and (max-width: 400px) {
+  #letsConnect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+  .project-entry{
+    display: block;
+    float: left;
+    width:100%;
+    height:auto;
+    padding-bottom: 1%;
+  }
+  #proj-descrip{
+    width:100%;
+    height:auto;
+    margin-bottom: 10%;
+  }
+  #circle{
+    display:none;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
     display: inline-block;
     float: left;
+    padding-left: 5px;
+    padding-right: 10px;
 
+  }
+  .project-entry{
+    display: inline-block;
+    float: left;
   }
 }
