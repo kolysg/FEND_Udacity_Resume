@@ -39,7 +39,7 @@ h1 {
   font-size: 40px;
   color: #F5A623;
   line-height: 48px;
-  display: inline;
+  display: flex;
 }
 
 h2 {
@@ -106,18 +106,19 @@ a {
   font-size: 14px;
   color: #F3F3F3;
   line-height: 28px;
-  display: inline-block;
+  display: inherit;
 }
 
 #skillsH3 {
   color: #F5AE23;
-  display: block;
+  display: inherit;
 }
 
 #skills {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  padding-left: inherit;
 }
 
 .orange {
@@ -179,11 +180,12 @@ ul {
 }
 
 .biopic {
-  padding-top: 0px;
-  padding-right: 10px;
-  width: auto;
-  vertical-align: text-top;
-  float: left;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px; 
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 100%;
 }
 
 img {
@@ -247,7 +249,7 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    width: auto;
   }
   .project-entry{
     display: block;
@@ -271,7 +273,7 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    width: auto;
   }
   .welcome-message {
     display: none;
@@ -311,17 +313,17 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    width: auto;
   }
   .welcome-message {
     display: none;
   }
   .project-entry{
-    display: block;
+    display: inherit;
     float: left;
     width:100%;
     height:auto;
-    padding-bottom: 1%;
+    padding-bottom: 0;
   }
   #proj-descrip{
     width:100%;
@@ -336,10 +338,11 @@ span {
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
-    display: inline-block;
+    width: auto;
+    display: flex;
     float: left;
     padding-left: 5px;
-    padding-right: 10px;
+    padding-right: 5px;
 
   }
   .project-entry{
