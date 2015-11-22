@@ -128,7 +128,7 @@ var education = {
             "name": "Bangladesh University of Engineering and Technology",
             "location": "Dhaka, Bangladesh",
             "degree": "Bachelor's",
-            "major": ["Architecure"],
+            "major": ["Architecture"],
             "dates": "2008"
         }
     ],
