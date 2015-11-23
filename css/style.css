@@ -103,7 +103,7 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 14px;
+  font-size: 18px;
   color: #F3F3F3;
   line-height: 28px;
   display: inherit;
@@ -150,7 +150,7 @@ a {
   /*background-color: #484848;*/
   display:block;
   position:inherit;
-  background:url(../images/mochaGrunge.png);
+  background:url(../images/grunge.jpg);
   background-repeat:no-repeat;
   background-size: 100% 100%;
   bottom:0;

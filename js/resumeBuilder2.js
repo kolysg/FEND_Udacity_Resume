@@ -256,15 +256,20 @@ projects.display = function(){
 
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedProjectDescription);
+
 //Why if statement in here??
 		if (projects.projects[project].images.length > 0){
 			for (image in projects.projects[project].images){
-				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images).replace('%datum%', projects.projects[project].alt);
-				$(".project-entry:last").append(formattedProjectImage);
+				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images).replace('%datum%', projects.projects[project].alt).replace("%data%", projects.projects[project].URL)
+				$(".project-entry:last").append(formattedProjectImage)
 			}
 		}
 
-	}
+		var formattedProjectURL = HTMLprojectURL.replace("%data%", projects.projects[project].URL);
+		$(".project-entry:last").append(formattedProjectURL);
+
+	}	
+
 }
 projects.display();
 
