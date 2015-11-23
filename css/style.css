@@ -145,7 +145,6 @@ a {
   background-color: #4A4A4A;
 }
 
-/* TODO: Replace with image later */
 #header {
   /*background-color: #484848;*/
   display:block;
@@ -199,7 +198,7 @@ img {
 #circle { 
   width: 150px; 
   height: 150px; 
-  background: blue; 
+  background: grey; 
   -moz-border-radius: 50%; 
   -webkit-border-radius: 50%; 
   border-radius: 50%; 
