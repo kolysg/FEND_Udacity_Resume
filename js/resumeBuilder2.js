@@ -17,16 +17,16 @@ var bio = {
     //"skills": ["Inquisitive", "Persistent", "Agile", "Pixel-perfectionist"]
     "skills": ["HTML5", "CSS3", "Javascript", "Python", "Adobe CreativeSuit", "CorelDraw", "Sketchup", "AutoCAD", "GIS"]
 
-}
+};
 
 bio.display = function() {
-    var formattedRole = HTMLheaderRole.replace("%data%", bio["role"]);
+    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     $("#header").prepend(formattedRole);
 
-    var formattedName = HTMLheaderName.replace("%data%", bio["name"]);
+    var formattedName = HTMLheaderName.replace("%data%", bio.name);
     $("#header").prepend(formattedName);
 
-    var formattedEmail = HTMLemail.replace("%data%", bio.contacts["email"]);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
     $("#topContacts").append(formattedEmail);
     $("#footerContacts").append(formattedEmail);
 
@@ -61,37 +61,34 @@ bio.display = function() {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
         }
-
     }
-
-}
+};
 bio.display();
 
 
 //Work Experience
 var work = {
     "jobs": [{
-            "title": "Design Associate",
-            "employer": "EnCodePlus LLC",
-            "dates": "February 2014 - November 2014",
-            "location": "SugarLand, TX",
-            "description": "Provided technical supports to the planning, development and maintenance of the company’s unique code publishing software 'enCodePlus'. Provided codification support for the municipal codes of client-cities. Created branding graphics, marketing materials and site designs for the client-cities. Provided website management support through HTML coding. Managed project worksheets and salesforce databases."
-        }, {
-            "title": "Planning Intern",
-            "employer": "City of Bryan",
-            "dates": "August 2012 - December 2012",
-            "location": "Bryan, TX",
-            "description": "Developed the City’s first GIS database for the city’s Tax Increment Reinvestment Zones (TIRZ). Recorded minutes, prepared presentations, organized offical documents for regular ‘Planning Commission’ and ‘Historic Landmark Commission’ meetings. Attended Site Review meetings, assisted in occasional site visits."
-        }, {
-            "title": "Associate Architect",
-            "employer": "Alpha Real Estate",
-            "dates": "January 2010 - September 2011",
-            "location": "Chittagong, Bangladesh",
-            "description": "Developed architectural designs for two residential apartment projects in Dhaka, Bangladesh. Attended regular site visits, client meetings, managed site developers. Prepared and managed official drawings and documents."
-        }
+        "title": "Design Associate",
+        "employer": "EnCodePlus LLC",
+        "dates": "February 2014 - November 2014",
+        "location": "SugarLand, TX",
+        "description": "Provided technical supports to the planning, development and maintenance of the company’s unique code publishing software 'enCodePlus'. Provided codification support for the municipal codes of client-cities. Created branding graphics, marketing materials and site designs for the client-cities. Provided website management support through HTML coding. Managed project worksheets and salesforce databases."
+    }, {
+        "title": "Planning Intern",
+        "employer": "City of Bryan",
+        "dates": "August 2012 - December 2012",
+        "location": "Bryan, TX",
+        "description": "Developed the City’s first GIS database for the city’s Tax Increment Reinvestment Zones (TIRZ). Recorded minutes, prepared presentations, organized offical documents for regular ‘Planning Commission’ and ‘Historic Landmark Commission’ meetings. Attended Site Review meetings, assisted in occasional site visits."
+    }, {
+        "title": "Associate Architect",
+        "employer": "Alpha Real Estate",
+        "dates": "January 2010 - September 2011",
+        "location": "Chittagong, Bangladesh",
+        "description": "Developed architectural designs for two residential apartment projects in Dhaka, Bangladesh. Attended regular site visits, client meetings, managed site developers. Prepared and managed official drawings and documents."
+    }]
+};
 
-    ]
-}
 work.display = function() {
     for (job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
@@ -106,8 +103,7 @@ work.display = function() {
         var formattedJobDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
         $(".work-entry:last").append(formattedJobDescription);
     }
-
-}
+};
 work.display();
 
 //Education
@@ -162,7 +158,8 @@ var education = {
             "url": "https://www.udacity.com"
         }
     ]
-}
+};
+
 education.display = function() {
     for (school in education.schools) {
         $("#education").append(HTMLschoolStart);
@@ -177,21 +174,21 @@ education.display = function() {
         $(".education-entry:last").append(formattedschoolDates);
         $(".education-entry:last").append(formattedschoolMajor);
     }
+
     //online courses
     $("#education").append(HTMLonlineClasses);
     for (course in education.onlineCourses) {
         $("#education").append(HTMLschoolStart);
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
         var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-        var formattedonlineCourse = formattedonlineTitle + formattedonlineSchool
+        var formattedonlineCourse = formattedonlineTitle + formattedonlineSchool;
         var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
         var formattedonlineUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
         $(".education-entry:last").append(formattedonlineCourse);
         $(".education-entry:last").append(formattedonlineDates);
         $(".education-entry:last").append(formattedonlineUrl);
     }
-
-}
+};
 education.display();
 
 //Projects
@@ -233,9 +230,9 @@ var projects = {
             "alt": "image of Stop Watch",
             "URL": "https://github.com/kolysg/Python/blob/master/Stopwatch.py"
         }
-
     ]
-}
+};
+
 projects.display = function() {
     for (project in projects.projects) {
         $("#projects").append(HTMLprojectStart);
@@ -251,15 +248,14 @@ projects.display = function() {
 
         if (projects.projects[project].images.length > 0) {
             for (image in projects.projects[project].images) {
-                var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images).replace('%datum%', projects.projects[project].alt).replace("%url%", projects.projects[project].URL)
+                var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images).replace('%datum%', projects.projects[project].alt).replace("%url%", projects.projects[project].URL);
                 $(".project-entry:last").append(formattedProjectImage);
             }
         }
         //var formattedProjectURL = HTMLprojectURL.replace("%data%", projects.projects[project].URL);
         //$(".project-entry:last").append(formattedProjectURL);
     }
-
-}
+};
 projects.display();
 
 //Loc

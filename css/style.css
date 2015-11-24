@@ -198,10 +198,11 @@ img {
 #circle { 
   width: 150px; 
   height: 150px; 
-  background: grey; 
   -moz-border-radius: 50%; 
   -webkit-border-radius: 50%; 
   border-radius: 50%; 
+  background: url(%url%);
+  clip: inherit;
 }
 
 
