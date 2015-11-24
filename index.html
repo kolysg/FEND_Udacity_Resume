@@ -23,7 +23,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
@@ -46,7 +46,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
   <script src="js/jQuery.js"></script>
 
-  <script src="js/bootstrap.min.js"></script>
+  <script src="Bootstrap/js/bootstrap.min.js"></script>
 
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
@@ -74,10 +74,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     display by looking at the id or at what's written between the <h2> tags.
     -->
       <div class = "row">
-        <div id="header" class="center-content clearfix">
-          <ul id="topContacts" class='flex-box'></ul>
+        <div class = "col-md-12">
+          <div id="header" class="center-content clearfix">
+            <ul id="topContacts" class='flex-box'></ul>
         </div>
-      </div>
+          </div>
+        </div>
 
         <div style='clear: both;'></div>
 
@@ -90,7 +92,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       </div>
 
       <div class = "row">
-        <div class = "col-xs-6">
+        <div class = "col-md-12">
           <div id="projects">
             <h2>Projects</h2>
           </div>
@@ -105,7 +107,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         </div>
       </div>
 
-      <div class = "row fluid">
+      <div class = "row">
         <div class = "col-md-12">
           <div id="mapDiv">
             <h2>Where I've Lived and Worked</h2>
