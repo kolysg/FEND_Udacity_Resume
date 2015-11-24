@@ -217,7 +217,7 @@ var projects = {
             "title": "Pong Game in Python",
             "date": "Sept - Oct 2014",
             "description": "Developed a Pong game using key events in Python.",
-            "images": ["images/Pong_game.png"],
+            "images": ["images/Pong_game.PNG"],
             "alt": "image of Pong Game",
             "URL": "http://www.codeskulptor.org/#user40_6Q0bID6XeV_0.py"
         },
@@ -226,7 +226,7 @@ var projects = {
             "title": "Stop Watch in Python",
             "date": "Sept - Oct 2014",
             "description": "Developed a Stop Watch exploring different event handlers in Python.",
-            "images": ["images/Stop_watch.png"],
+            "images": ["images/Stop_watch.PNG"],
             "alt": "image of Stop Watch",
             "URL": "https://github.com/kolysg/Python/blob/master/Stopwatch.py"
         }
