@@ -5,13 +5,13 @@ var bio = {
     "role": "Front End Developer/Designer",
     "contacts": {
         "email": "koly.sg@gmail.com",
-        "phone": "979----7575",
+        "mobile": "979----7575",
         "twitter": "KolySG",
         "github": "kolysg",
         "location": "East Bay, California"
 
     },
-    "pic": "images/koly.jpg",
+    "biopic": "images/koly.jpg",
     //"pic": "https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11390120_10207208987806072_75049282207992131_n.jpg?oh=d2f2e7b4e70a341e6a14c3cad9943ab0&oe=568D812F",
     "welcomeMessage": "Thanks for visitng my page. If you like my work and think I can be a good fit, please contact me in the address provided.",
     //"skills": ["Inquisitive", "Persistent", "Agile", "Pixel-perfectionist"]
@@ -30,7 +30,7 @@ bio.display = function() {
     $("#topContacts").append(formattedEmail);
     $("#footerContacts").append(formattedEmail);
 
-    var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
+    var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.mobile);
     $("#topContacts").append(formattedPhone);
     $("#footerContacts").append(formattedPhone);
 
@@ -45,7 +45,7 @@ bio.display = function() {
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     $("#topContacts").append(formattedLocation);
 
-    var formattedPic = HTMLbioPic.replace("%data%", bio.pic);
+    var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 
     $("#header").append(formattedPic);
 
@@ -126,35 +126,35 @@ var education = {
         {
             "title": "Front End Development Nanodegree",
             "school": "Udacity",
-            "dates": "2015",
+            "dates": 2015,
             "url": "https://www.udacity.com"
         },
 
         {
             "title": "Introduction to Computer Science",
             "school": "Udacity",
-            "dates": "2015",
+            "dates": 2015,
             "url": "https://www.udacity.com"
         },
 
         {
             "title": "Introduction to programming in Python (Part 1)",
             "school": "Coursera - Rice University",
-            "dates": "2014",
+            "dates": 2014,
             "url": "https://www.coursera.org/course/interactivepython1"
         },
 
         {
             "title": "Programming Foundations with Python",
             "school": "Udacity",
-            "dates": "2014",
+            "dates": 2014,
             "url": "https://www.udacity.com"
         },
 
         {
             "title": "How to use Git and Github",
             "school": "Udacity",
-            "dates": "2015",
+            "dates": 2015,
             "url": "https://www.udacity.com"
         }
     ]
